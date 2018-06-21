@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.jumbotron {
+    background-color: rgba(255,255,255,0.5) !important;
+}
+
+
+/************BACKGROUND VIDEO AND CONTAINER SECTION*************/
+
+video#bgVideo {
+position: fixed;
+right: 0;
+bottom: 0;
+width: auto;
+min-width: 100%;
+height: auto;
+min-height: 100%;
+z-index: -100;    
+background-size: cover;
+filter: brightness(0.6);
+}
+
+.cc{
+   
+    background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(97,157,209,1) 71%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(97,157,209,1) 71%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(97,157,209,1) 71%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+    
+    -webkit-box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.75);
+    
+    max-width: 960px;
+    height: 100%;
+    margin: 20px auto;
+    background-color: rgba(255,255,255,0.7);
+    
+}
+@media (max-width: 768px) {
+  .container {
+      margin: 0;
+      width: 100%;
+  }
+}
+
+/************BACKGROUND VIDEO AND CONTAINER SECTION*************/
+
+
+
+/************BANNER, TITLE, AND LAKE PIC SECTION*************/
+
+.img-blur{
+    background-image: url(../Space_Needle002.jpg);
+    background-size: cover;
+    background-position: 0% 45%;
+    width: 100%;
+    height: 120px;
+    display: block;
+    border-radius: 8px;
+    position: absolute;
+    filter: blur(2px);
+    
+    -webkit-box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.75);
+}
+
+.lakepic {
+    width: 600px;
+    height: 260px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+@media (max-width:679px){
+    .lakepic{
+        width: 100%;
+    }
+}
+    
+
+.title {
+    margin-bottom: 20px;
+    padding-bottom: 80px;
+    top: 40px;
+    width: 100%;
+    display: block;
+    position: relative;
+    font-family: cursive;
+    color: #ec983d;
+}
+
+/************BANNER, TITLE, AND LAKE PIC SECTION*************/
+
+
+/************NAVBAR SECTION*************/
+
+nav.navbar-inverse {
+    display: block;
+    position: relative;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+#myNavbar ul li a {
+    color: #eeeeee;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+#myNavbar ul li a:hover {
+    color: #000;
+    background-color: #d0deeb;
+    font-weight: 600;
+}
+
+#myNavbar ul li.active a{
+    background-color: #d0deeb;
+    color: #000;
+    font-weight: 799;
+    font-family: sans-serif;
+}
+
+.navbar-inverse .navbar-header .navbar-brand {
+    font-size: 25px;
+    color: #3ab51c;
+    font-family: monospace;
+}
+
+/************NAVBAR SECTION*************/
+
+
+
+/************FOOTER SECTION*************/
+
+footer {
+    border-radius: 8px;
+    background-color: #222222;
+    color: white;
+}
+
+footer button {
+    margin-right: 10px;
+    color: #222222;
+    font-weight: 600;
+}
+
+/************FOOTER SECTION*************/
+
+
+
+.icon {
+    font-size: 50px;
+}
+
+.image-well{
+    height: 300px;
+    width: 500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.headers {
+    font-size: 40px;
+    font-family: cursive;
+    color: #185093;
+}
+
+.headers2 {
+    font-family: 'Roboto', sans-serif;
+    color: #123b6b;
+}
+
+.paragraph {
+    font-family: monospace;
+    color: #113a5e;
+}
+
+.headers1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 33px;
+    color: #185093;
+}
+
+.map {
+    margin-bottom: 40px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (max-width:473px){
+    .map{
+        width: 100%;
+    }
+}
+
+#InputName, #InputMessage, #InputEmail, .button {
+    width: 300px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+form label {
+    font-size: 24px;
+    color: #185093;
+    font-family: monospace;  
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.form-group .form-header {
+    font-size: 40px;
+    font-family: cursive;
+    color: #185093;
+}
+
+form input, form textarea {
+    font-family: monospace;
+}
+
+input[type=text]:focus, .form-group textarea:focus, input[type=email]:focus {
+    background-color: #185093;
+    color: #fff;
+    -webkit-box-shadow: 0px 6px 6px #888888;
+    box-shadow: 0px 6px 6px #888888;
+}
+
+.button{
+    color: #185093;
+    padding: 4px;
+    border-radius: 4px;
+    border: 2px solid #37639e;
+    overflow: hidden;
+}
+.button:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background-color: #185093;
+    border: 2px solid #fff;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.button:hover {
+    color: #fff;
+}
+
+.button:hover:before {
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width:375px){
+    #InputName, #InputMessage, #InputEmail, .button{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
